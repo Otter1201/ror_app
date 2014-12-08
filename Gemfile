@@ -38,6 +38,11 @@ gem 'spring',        group: :development
 
 
 # Use sqlite3 as the database for Active Record
-gem 'sqlite3'
+#gem 'sqlite3'
+
+# For heroku
+ group :production do
+   gem 'pg', '0.15.1'
+ end
 
 
